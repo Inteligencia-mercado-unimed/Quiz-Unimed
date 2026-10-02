@@ -1,0 +1,106 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+model User {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  name      String?
+  role      String   @default("ADMIN") // ADMIN, VIEWER
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Sector {
+  id        String   @id @default(cuid())
+  name      String   @unique
+  active    Boolean  @default(true)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Question {
+  id            String   @id @default(cuid())
+  pill          String   // e.g. "Pílula #01"
+  question      String   // Enunciado
+  optionA       String
+  optionB       String
+  optionC       String
+  optionD       String
+  correctOption String   // "A", "B", "C", "D"
+  explanation   String   // Explicação detalhada
+  active        Boolean  @default(true)
+  order         Int      @default(0)
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+}
+
+model Attempt {
+  id              String            @id @default(cuid())
+  userName        String
+  sectorName      String
+  sectorId        String?
+  startTime       DateTime
+  endTime         DateTime?
+  durationSeconds Int               @default(0)
+  score           Int               @default(0)
+  totalQuestions  Int               @default(4)
+  isOfficial      Boolean           @default(true) // Primeira tentativa concluída por combinação nome+setor
+  isEligiblePrize Boolean           @default(false) // Primeira oficial com 100% de acertos dentro das vagas de premiação
+  status          String            @default("IN_PROGRESS") // "IN_PROGRESS", "COMPLETED", "ABANDONED"
+  questions       AttemptQuestion[]
+  answers         AttemptAnswer[]
+  createdAt       DateTime          @default(now())
+  updatedAt       DateTime          @updatedAt
+
+  @@index([userName, sectorName])
+  @@index([isOfficial, score, durationSeconds, endTime])
+}
+
+model AttemptQuestion {
+  id            String   @id @default(cuid())
+  attemptId     String
+  attempt       Attempt  @relation(fields: [attemptId], references: [id], onDelete: Cascade)
+  questionId    String
+  pill          String
+  question      String
+  optionA       String
+  optionB       String
+  optionC       String
+  optionD       String
+  correctOption String
+  explanation   String
+  order         Int      @default(0)
+
+  @@index([attemptId])
+}
+
+model AttemptAnswer {
+  id             String   @id @default(cuid())
+  attemptId      String
+  attempt        Attempt  @relation(fields: [attemptId], references: [id], onDelete: Cascade)
+  questionId     String
+  selectedOption String   // "A", "B", "C", "D"
+  isCorrect      Boolean
+  answeredAt     DateTime @default(now())
+
+  @@index([attemptId])
+}
+
+model AppConfig {
+  id               String   @id @default("default")
+  maxWinners       Int      @default(1) // Quantidade de ganhadores configurável
+  campaignCode     String   @default("POL.INT.7.3")
+  title            String   @default("Pílulas de Integridade — Unimed Centro Rondônia")
+  prizeDescription String   @default("O primeiro participante a acertar todas as perguntas ganha um prêmio!")
+  updatedAt        DateTime @updatedAt
+}

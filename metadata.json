@@ -1,0 +1,6 @@
+{
+  "name": "Pílulas de Integridade — Unimed Centro Rondônia",
+  "description": "Aplicativo de quiz de compliance e ética da Unimed Centro Rondônia, com ranking oficial, premiações e painel administrativo.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

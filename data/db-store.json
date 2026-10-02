@@ -1,0 +1,564 @@
+{
+  "users": [
+    {
+      "id": "usr-admin-1",
+      "email": "rrochapablo@gmail.com",
+      "name": "Pablo Rocha",
+      "role": "ADMIN",
+      "createdAt": "2026-01-01T00:00:00.000Z"
+    }
+  ],
+  "sectors": [
+    {
+      "id": "sec-1",
+      "name": "Atendimento ao Cliente / Call Center",
+      "active": true,
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "sec-2",
+      "name": "Auditoria Médica",
+      "active": true,
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "sec-3",
+      "name": "Compliance e Governança",
+      "active": true,
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "sec-4",
+      "name": "Contabilidade e Finanças",
+      "active": true,
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "sec-5",
+      "name": "Gestão de Pessoas (RH)",
+      "active": true,
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "sec-6",
+      "name": "Marketing e Comunicação",
+      "active": true,
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "sec-7",
+      "name": "Tecnologia da Informação (TI)",
+      "active": true,
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "sec-8",
+      "name": "Vendas e Mercado",
+      "active": true,
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "sec-9",
+      "name": "Operações e Rede Própria",
+      "active": true,
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-01-01T00:00:00.000Z"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q-1",
+      "pill": "Pílula #01",
+      "question": "De acordo com a Pílula #01 da política POL.INT.7.3, o que caracteriza primordialmente um conflito de interesses no ambiente cooperativo da Unimed Centro Rondônia?",
+      "optionA": "Quando o colaborador possui uma opinião técnica divergente da diretoria em reuniões de planejamento.",
+      "optionB": "Quando interesses pessoais, familiares ou financeiros de um colaborador podem interferir na imparcialidade e na tomada de decisão em benefício da cooperativa.",
+      "optionC": "Quando o colaborador faz horas extras sem autorização prévia do seu gestor imediato.",
+      "optionD": "Quando há troca de e-mails entre diferentes setores sem a cópia da supervisão.",
+      "correctOption": "B",
+      "explanation": "Interesses particulares podem comprometer a imparcialidade. A situação deve ser comunicada com transparência.",
+      "active": true,
+      "order": 1,
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "q-2",
+      "pill": "Pílula #02",
+      "question": "Sobre a aceitação de brindes, presentes e hospitalidades corporativas regida pela Pílula #02, qual conduta é permitida?",
+      "optionA": "Aceitar viagens custeadas por fornecedores durante uma negociação de contratos.",
+      "optionB": "Receber brindes institucionais de baixo valor, distribuídos de forma genérica e sem finalidade de influência.",
+      "optionC": "Aceitar dinheiro ou cartões-presente de beneficiários em troca de atendimento preferencial.",
+      "optionD": "Receber descontos particulares exclusivos de empresas contratadas pela Unimed.",
+      "correctOption": "B",
+      "explanation": "Brindes de baixo valor e sem intenção de influenciar decisões preservam a transparência institucional.",
+      "active": true,
+      "order": 2,
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "q-3",
+      "pill": "Pílula #03",
+      "question": "A Pílula #03 aborda a integridade nas relações com entes públicos e privados. Qual atitude é obrigatória ao lidar com agentes públicos?",
+      "optionA": "Oferecer gratificações para acelerar procedimentos.",
+      "optionB": "Atuar com transparência, respeitar as leis e recusar qualquer vantagem indevida.",
+      "optionC": "Fornecer informações confidenciais de beneficiários mediante pedido verbal.",
+      "optionD": "Conduzir reuniões institucionais sem registro.",
+      "correctOption": "B",
+      "explanation": "A relação com agentes públicos exige transparência e recusa de qualquer vantagem indevida.",
+      "active": true,
+      "order": 3,
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "q-4",
+      "pill": "Pílula #04",
+      "question": "Segundo a Pílula #04, qual é o canal correto para relatar suspeitas de violação à política de integridade?",
+      "optionA": "Comentar o caso em grupos informais de mensagens.",
+      "optionB": "Utilizar o Canal de Denúncias oficial da cooperativa.",
+      "optionC": "Enviar uma carta à residência dos membros do Conselho.",
+      "optionD": "Ignorar a situação quando não envolver seu setor.",
+      "correctOption": "B",
+      "explanation": "O Canal de Denúncias oficial protege o sigilo do relato e o tratamento adequado da situação.",
+      "active": true,
+      "order": 4,
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-01-01T00:00:00.000Z"
+    }
+  ],
+  "attempts": [
+    {
+      "id": "att-1790904725553-gaf2mnk",
+      "userName": "Colaborador Teste",
+      "sectorName": "Tecnologia da Informação (TI)",
+      "sectorId": null,
+      "startTime": "2026-10-02T01:32:05.553Z",
+      "endTime": null,
+      "durationSeconds": 0,
+      "score": 1,
+      "totalQuestions": 4,
+      "isOfficial": false,
+      "isEligiblePrize": false,
+      "status": "IN_PROGRESS",
+      "questions": [
+        {
+          "id": "snap-att-1790904725553-gaf2mnk-1",
+          "attemptId": "att-1790904725553-gaf2mnk",
+          "questionId": "q-1",
+          "pill": "Pílula #01",
+          "question": "De acordo com a Pílula #01 da política POL.INT.7.3, o que caracteriza primordialmente um conflito de interesses no ambiente cooperativo da Unimed Centro Rondônia?",
+          "optionA": "Quando o colaborador possui uma opinião técnica divergente da diretoria em reuniões de planejamento.",
+          "optionB": "Quando interesses pessoais, familiares ou financeiros de um colaborador podem interferir na imparcialidade e na tomada de decisão em benefício da cooperativa.",
+          "optionC": "Quando o colaborador faz horas extras sem autorização prévia do seu gestor imediato.",
+          "optionD": "Quando há troca de e-mails entre diferentes setores sem a cópia da supervisão.",
+          "correctOption": "B",
+          "explanation": "Interesses particulares podem comprometer a imparcialidade. A situação deve ser comunicada com transparência.",
+          "order": 1
+        },
+        {
+          "id": "snap-att-1790904725553-gaf2mnk-2",
+          "attemptId": "att-1790904725553-gaf2mnk",
+          "questionId": "q-2",
+          "pill": "Pílula #02",
+          "question": "Sobre a aceitação de brindes, presentes e hospitalidades corporativas regida pela Pílula #02, qual conduta é permitida?",
+          "optionA": "Aceitar viagens custeadas por fornecedores durante uma negociação de contratos.",
+          "optionB": "Receber brindes institucionais de baixo valor, distribuídos de forma genérica e sem finalidade de influência.",
+          "optionC": "Aceitar dinheiro ou cartões-presente de beneficiários em troca de atendimento preferencial.",
+          "optionD": "Receber descontos particulares exclusivos de empresas contratadas pela Unimed.",
+          "correctOption": "B",
+          "explanation": "Brindes de baixo valor e sem intenção de influenciar decisões preservam a transparência institucional.",
+          "order": 2
+        },
+        {
+          "id": "snap-att-1790904725553-gaf2mnk-3",
+          "attemptId": "att-1790904725553-gaf2mnk",
+          "questionId": "q-3",
+          "pill": "Pílula #03",
+          "question": "A Pílula #03 aborda a integridade nas relações com entes públicos e privados. Qual atitude é obrigatória ao lidar com agentes públicos?",
+          "optionA": "Oferecer gratificações para acelerar procedimentos.",
+          "optionB": "Atuar com transparência, respeitar as leis e recusar qualquer vantagem indevida.",
+          "optionC": "Fornecer informações confidenciais de beneficiários mediante pedido verbal.",
+          "optionD": "Conduzir reuniões institucionais sem registro.",
+          "correctOption": "B",
+          "explanation": "A relação com agentes públicos exige transparência e recusa de qualquer vantagem indevida.",
+          "order": 3
+        },
+        {
+          "id": "snap-att-1790904725553-gaf2mnk-4",
+          "attemptId": "att-1790904725553-gaf2mnk",
+          "questionId": "q-4",
+          "pill": "Pílula #04",
+          "question": "Segundo a Pílula #04, qual é o canal correto para relatar suspeitas de violação à política de integridade?",
+          "optionA": "Comentar o caso em grupos informais de mensagens.",
+          "optionB": "Utilizar o Canal de Denúncias oficial da cooperativa.",
+          "optionC": "Enviar uma carta à residência dos membros do Conselho.",
+          "optionD": "Ignorar a situação quando não envolver seu setor.",
+          "correctOption": "B",
+          "explanation": "O Canal de Denúncias oficial protege o sigilo do relato e o tratamento adequado da situação.",
+          "order": 4
+        }
+      ],
+      "answers": [
+        {
+          "id": "ans-att-1790904725553-gaf2mnk-q-1",
+          "attemptId": "att-1790904725553-gaf2mnk",
+          "questionId": "q-1",
+          "selectedOption": "B",
+          "isCorrect": true,
+          "answeredAt": "2026-10-02T01:32:05.618Z"
+        },
+        {
+          "id": "ans-att-1790904725553-gaf2mnk-q-2",
+          "attemptId": "att-1790904725553-gaf2mnk",
+          "questionId": "q-2",
+          "selectedOption": "A",
+          "isCorrect": false,
+          "answeredAt": "2026-10-02T01:32:05.619Z"
+        }
+      ],
+      "createdAt": "2026-10-02T01:32:05.553Z",
+      "updatedAt": "2026-10-02T01:32:05.619Z"
+    },
+    {
+      "id": "att-1790904725619-o0hvbho",
+      "userName": "Calculo Teste",
+      "sectorName": "Compliance e Governança",
+      "sectorId": null,
+      "startTime": "2026-10-02T01:32:05.619Z",
+      "endTime": "2026-10-02T01:32:05.621Z",
+      "durationSeconds": 1,
+      "score": 2,
+      "totalQuestions": 4,
+      "isOfficial": true,
+      "isEligiblePrize": false,
+      "status": "COMPLETED",
+      "questions": [
+        {
+          "id": "snap-att-1790904725619-o0hvbho-1",
+          "attemptId": "att-1790904725619-o0hvbho",
+          "questionId": "q-1",
+          "pill": "Pílula #01",
+          "question": "De acordo com a Pílula #01 da política POL.INT.7.3, o que caracteriza primordialmente um conflito de interesses no ambiente cooperativo da Unimed Centro Rondônia?",
+          "optionA": "Quando o colaborador possui uma opinião técnica divergente da diretoria em reuniões de planejamento.",
+          "optionB": "Quando interesses pessoais, familiares ou financeiros de um colaborador podem interferir na imparcialidade e na tomada de decisão em benefício da cooperativa.",
+          "optionC": "Quando o colaborador faz horas extras sem autorização prévia do seu gestor imediato.",
+          "optionD": "Quando há troca de e-mails entre diferentes setores sem a cópia da supervisão.",
+          "correctOption": "B",
+          "explanation": "Interesses particulares podem comprometer a imparcialidade. A situação deve ser comunicada com transparência.",
+          "order": 1
+        },
+        {
+          "id": "snap-att-1790904725619-o0hvbho-2",
+          "attemptId": "att-1790904725619-o0hvbho",
+          "questionId": "q-2",
+          "pill": "Pílula #02",
+          "question": "Sobre a aceitação de brindes, presentes e hospitalidades corporativas regida pela Pílula #02, qual conduta é permitida?",
+          "optionA": "Aceitar viagens custeadas por fornecedores durante uma negociação de contratos.",
+          "optionB": "Receber brindes institucionais de baixo valor, distribuídos de forma genérica e sem finalidade de influência.",
+          "optionC": "Aceitar dinheiro ou cartões-presente de beneficiários em troca de atendimento preferencial.",
+          "optionD": "Receber descontos particulares exclusivos de empresas contratadas pela Unimed.",
+          "correctOption": "B",
+          "explanation": "Brindes de baixo valor e sem intenção de influenciar decisões preservam a transparência institucional.",
+          "order": 2
+        },
+        {
+          "id": "snap-att-1790904725619-o0hvbho-3",
+          "attemptId": "att-1790904725619-o0hvbho",
+          "questionId": "q-3",
+          "pill": "Pílula #03",
+          "question": "A Pílula #03 aborda a integridade nas relações com entes públicos e privados. Qual atitude é obrigatória ao lidar com agentes públicos?",
+          "optionA": "Oferecer gratificações para acelerar procedimentos.",
+          "optionB": "Atuar com transparência, respeitar as leis e recusar qualquer vantagem indevida.",
+          "optionC": "Fornecer informações confidenciais de beneficiários mediante pedido verbal.",
+          "optionD": "Conduzir reuniões institucionais sem registro.",
+          "correctOption": "B",
+          "explanation": "A relação com agentes públicos exige transparência e recusa de qualquer vantagem indevida.",
+          "order": 3
+        },
+        {
+          "id": "snap-att-1790904725619-o0hvbho-4",
+          "attemptId": "att-1790904725619-o0hvbho",
+          "questionId": "q-4",
+          "pill": "Pílula #04",
+          "question": "Segundo a Pílula #04, qual é o canal correto para relatar suspeitas de violação à política de integridade?",
+          "optionA": "Comentar o caso em grupos informais de mensagens.",
+          "optionB": "Utilizar o Canal de Denúncias oficial da cooperativa.",
+          "optionC": "Enviar uma carta à residência dos membros do Conselho.",
+          "optionD": "Ignorar a situação quando não envolver seu setor.",
+          "correctOption": "B",
+          "explanation": "O Canal de Denúncias oficial protege o sigilo do relato e o tratamento adequado da situação.",
+          "order": 4
+        }
+      ],
+      "answers": [
+        {
+          "id": "ans-att-1790904725619-o0hvbho-q-1",
+          "attemptId": "att-1790904725619-o0hvbho",
+          "questionId": "q-1",
+          "selectedOption": "B",
+          "isCorrect": true,
+          "answeredAt": "2026-10-02T01:32:05.619Z"
+        },
+        {
+          "id": "ans-att-1790904725619-o0hvbho-q-2",
+          "attemptId": "att-1790904725619-o0hvbho",
+          "questionId": "q-2",
+          "selectedOption": "D",
+          "isCorrect": false,
+          "answeredAt": "2026-10-02T01:32:05.620Z"
+        },
+        {
+          "id": "ans-att-1790904725619-o0hvbho-q-3",
+          "attemptId": "att-1790904725619-o0hvbho",
+          "questionId": "q-3",
+          "selectedOption": "B",
+          "isCorrect": true,
+          "answeredAt": "2026-10-02T01:32:05.620Z"
+        },
+        {
+          "id": "ans-att-1790904725619-o0hvbho-q-4",
+          "attemptId": "att-1790904725619-o0hvbho",
+          "questionId": "q-4",
+          "selectedOption": "D",
+          "isCorrect": false,
+          "answeredAt": "2026-10-02T01:32:05.620Z"
+        }
+      ],
+      "createdAt": "2026-10-02T01:32:05.619Z",
+      "updatedAt": "2026-10-02T01:32:05.621Z"
+    },
+    {
+      "id": "att-1790904725621-vynaz9g",
+      "userName": "Juliana Prado",
+      "sectorName": "Auditoria Médica",
+      "sectorId": null,
+      "startTime": "2026-10-02T01:32:05.621Z",
+      "endTime": "2026-10-02T01:32:05.623Z",
+      "durationSeconds": 1,
+      "score": 4,
+      "totalQuestions": 4,
+      "isOfficial": true,
+      "isEligiblePrize": true,
+      "status": "COMPLETED",
+      "questions": [
+        {
+          "id": "snap-att-1790904725621-vynaz9g-1",
+          "attemptId": "att-1790904725621-vynaz9g",
+          "questionId": "q-1",
+          "pill": "Pílula #01",
+          "question": "De acordo com a Pílula #01 da política POL.INT.7.3, o que caracteriza primordialmente um conflito de interesses no ambiente cooperativo da Unimed Centro Rondônia?",
+          "optionA": "Quando o colaborador possui uma opinião técnica divergente da diretoria em reuniões de planejamento.",
+          "optionB": "Quando interesses pessoais, familiares ou financeiros de um colaborador podem interferir na imparcialidade e na tomada de decisão em benefício da cooperativa.",
+          "optionC": "Quando o colaborador faz horas extras sem autorização prévia do seu gestor imediato.",
+          "optionD": "Quando há troca de e-mails entre diferentes setores sem a cópia da supervisão.",
+          "correctOption": "B",
+          "explanation": "Interesses particulares podem comprometer a imparcialidade. A situação deve ser comunicada com transparência.",
+          "order": 1
+        },
+        {
+          "id": "snap-att-1790904725621-vynaz9g-2",
+          "attemptId": "att-1790904725621-vynaz9g",
+          "questionId": "q-2",
+          "pill": "Pílula #02",
+          "question": "Sobre a aceitação de brindes, presentes e hospitalidades corporativas regida pela Pílula #02, qual conduta é permitida?",
+          "optionA": "Aceitar viagens custeadas por fornecedores durante uma negociação de contratos.",
+          "optionB": "Receber brindes institucionais de baixo valor, distribuídos de forma genérica e sem finalidade de influência.",
+          "optionC": "Aceitar dinheiro ou cartões-presente de beneficiários em troca de atendimento preferencial.",
+          "optionD": "Receber descontos particulares exclusivos de empresas contratadas pela Unimed.",
+          "correctOption": "B",
+          "explanation": "Brindes de baixo valor e sem intenção de influenciar decisões preservam a transparência institucional.",
+          "order": 2
+        },
+        {
+          "id": "snap-att-1790904725621-vynaz9g-3",
+          "attemptId": "att-1790904725621-vynaz9g",
+          "questionId": "q-3",
+          "pill": "Pílula #03",
+          "question": "A Pílula #03 aborda a integridade nas relações com entes públicos e privados. Qual atitude é obrigatória ao lidar com agentes públicos?",
+          "optionA": "Oferecer gratificações para acelerar procedimentos.",
+          "optionB": "Atuar com transparência, respeitar as leis e recusar qualquer vantagem indevida.",
+          "optionC": "Fornecer informações confidenciais de beneficiários mediante pedido verbal.",
+          "optionD": "Conduzir reuniões institucionais sem registro.",
+          "correctOption": "B",
+          "explanation": "A relação com agentes públicos exige transparência e recusa de qualquer vantagem indevida.",
+          "order": 3
+        },
+        {
+          "id": "snap-att-1790904725621-vynaz9g-4",
+          "attemptId": "att-1790904725621-vynaz9g",
+          "questionId": "q-4",
+          "pill": "Pílula #04",
+          "question": "Segundo a Pílula #04, qual é o canal correto para relatar suspeitas de violação à política de integridade?",
+          "optionA": "Comentar o caso em grupos informais de mensagens.",
+          "optionB": "Utilizar o Canal de Denúncias oficial da cooperativa.",
+          "optionC": "Enviar uma carta à residência dos membros do Conselho.",
+          "optionD": "Ignorar a situação quando não envolver seu setor.",
+          "correctOption": "B",
+          "explanation": "O Canal de Denúncias oficial protege o sigilo do relato e o tratamento adequado da situação.",
+          "order": 4
+        }
+      ],
+      "answers": [
+        {
+          "id": "ans-att-1790904725621-vynaz9g-q-1",
+          "attemptId": "att-1790904725621-vynaz9g",
+          "questionId": "q-1",
+          "selectedOption": "B",
+          "isCorrect": true,
+          "answeredAt": "2026-10-02T01:32:05.622Z"
+        },
+        {
+          "id": "ans-att-1790904725621-vynaz9g-q-2",
+          "attemptId": "att-1790904725621-vynaz9g",
+          "questionId": "q-2",
+          "selectedOption": "B",
+          "isCorrect": true,
+          "answeredAt": "2026-10-02T01:32:05.622Z"
+        },
+        {
+          "id": "ans-att-1790904725621-vynaz9g-q-3",
+          "attemptId": "att-1790904725621-vynaz9g",
+          "questionId": "q-3",
+          "selectedOption": "B",
+          "isCorrect": true,
+          "answeredAt": "2026-10-02T01:32:05.623Z"
+        },
+        {
+          "id": "ans-att-1790904725621-vynaz9g-q-4",
+          "attemptId": "att-1790904725621-vynaz9g",
+          "questionId": "q-4",
+          "selectedOption": "B",
+          "isCorrect": true,
+          "answeredAt": "2026-10-02T01:32:05.623Z"
+        }
+      ],
+      "createdAt": "2026-10-02T01:32:05.621Z",
+      "updatedAt": "2026-10-02T01:32:05.623Z"
+    },
+    {
+      "id": "att-1790904725624-acuq7l5",
+      "userName": "Juliana Prado",
+      "sectorName": "Auditoria Médica",
+      "sectorId": null,
+      "startTime": "2026-10-02T01:32:05.624Z",
+      "endTime": "2026-10-02T01:32:05.626Z",
+      "durationSeconds": 1,
+      "score": 4,
+      "totalQuestions": 4,
+      "isOfficial": false,
+      "isEligiblePrize": false,
+      "status": "COMPLETED",
+      "questions": [
+        {
+          "id": "snap-att-1790904725624-acuq7l5-1",
+          "attemptId": "att-1790904725624-acuq7l5",
+          "questionId": "q-1",
+          "pill": "Pílula #01",
+          "question": "De acordo com a Pílula #01 da política POL.INT.7.3, o que caracteriza primordialmente um conflito de interesses no ambiente cooperativo da Unimed Centro Rondônia?",
+          "optionA": "Quando o colaborador possui uma opinião técnica divergente da diretoria em reuniões de planejamento.",
+          "optionB": "Quando interesses pessoais, familiares ou financeiros de um colaborador podem interferir na imparcialidade e na tomada de decisão em benefício da cooperativa.",
+          "optionC": "Quando o colaborador faz horas extras sem autorização prévia do seu gestor imediato.",
+          "optionD": "Quando há troca de e-mails entre diferentes setores sem a cópia da supervisão.",
+          "correctOption": "B",
+          "explanation": "Interesses particulares podem comprometer a imparcialidade. A situação deve ser comunicada com transparência.",
+          "order": 1
+        },
+        {
+          "id": "snap-att-1790904725624-acuq7l5-2",
+          "attemptId": "att-1790904725624-acuq7l5",
+          "questionId": "q-2",
+          "pill": "Pílula #02",
+          "question": "Sobre a aceitação de brindes, presentes e hospitalidades corporativas regida pela Pílula #02, qual conduta é permitida?",
+          "optionA": "Aceitar viagens custeadas por fornecedores durante uma negociação de contratos.",
+          "optionB": "Receber brindes institucionais de baixo valor, distribuídos de forma genérica e sem finalidade de influência.",
+          "optionC": "Aceitar dinheiro ou cartões-presente de beneficiários em troca de atendimento preferencial.",
+          "optionD": "Receber descontos particulares exclusivos de empresas contratadas pela Unimed.",
+          "correctOption": "B",
+          "explanation": "Brindes de baixo valor e sem intenção de influenciar decisões preservam a transparência institucional.",
+          "order": 2
+        },
+        {
+          "id": "snap-att-1790904725624-acuq7l5-3",
+          "attemptId": "att-1790904725624-acuq7l5",
+          "questionId": "q-3",
+          "pill": "Pílula #03",
+          "question": "A Pílula #03 aborda a integridade nas relações com entes públicos e privados. Qual atitude é obrigatória ao lidar com agentes públicos?",
+          "optionA": "Oferecer gratificações para acelerar procedimentos.",
+          "optionB": "Atuar com transparência, respeitar as leis e recusar qualquer vantagem indevida.",
+          "optionC": "Fornecer informações confidenciais de beneficiários mediante pedido verbal.",
+          "optionD": "Conduzir reuniões institucionais sem registro.",
+          "correctOption": "B",
+          "explanation": "A relação com agentes públicos exige transparência e recusa de qualquer vantagem indevida.",
+          "order": 3
+        },
+        {
+          "id": "snap-att-1790904725624-acuq7l5-4",
+          "attemptId": "att-1790904725624-acuq7l5",
+          "questionId": "q-4",
+          "pill": "Pílula #04",
+          "question": "Segundo a Pílula #04, qual é o canal correto para relatar suspeitas de violação à política de integridade?",
+          "optionA": "Comentar o caso em grupos informais de mensagens.",
+          "optionB": "Utilizar o Canal de Denúncias oficial da cooperativa.",
+          "optionC": "Enviar uma carta à residência dos membros do Conselho.",
+          "optionD": "Ignorar a situação quando não envolver seu setor.",
+          "correctOption": "B",
+          "explanation": "O Canal de Denúncias oficial protege o sigilo do relato e o tratamento adequado da situação.",
+          "order": 4
+        }
+      ],
+      "answers": [
+        {
+          "id": "ans-att-1790904725624-acuq7l5-q-1",
+          "attemptId": "att-1790904725624-acuq7l5",
+          "questionId": "q-1",
+          "selectedOption": "B",
+          "isCorrect": true,
+          "answeredAt": "2026-10-02T01:32:05.625Z"
+        },
+        {
+          "id": "ans-att-1790904725624-acuq7l5-q-2",
+          "attemptId": "att-1790904725624-acuq7l5",
+          "questionId": "q-2",
+          "selectedOption": "B",
+          "isCorrect": true,
+          "answeredAt": "2026-10-02T01:32:05.625Z"
+        },
+        {
+          "id": "ans-att-1790904725624-acuq7l5-q-3",
+          "attemptId": "att-1790904725624-acuq7l5",
+          "questionId": "q-3",
+          "selectedOption": "B",
+          "isCorrect": true,
+          "answeredAt": "2026-10-02T01:32:05.625Z"
+        },
+        {
+          "id": "ans-att-1790904725624-acuq7l5-q-4",
+          "attemptId": "att-1790904725624-acuq7l5",
+          "questionId": "q-4",
+          "selectedOption": "B",
+          "isCorrect": true,
+          "answeredAt": "2026-10-02T01:32:05.626Z"
+        }
+      ],
+      "createdAt": "2026-10-02T01:32:05.624Z",
+      "updatedAt": "2026-10-02T01:32:05.626Z"
+    }
+  ],
+  "config": {
+    "id": "default",
+    "maxWinners": 1,
+    "campaignCode": "POL.INT.7.3",
+    "title": "Pílulas de Integridade — Unimed Centro Rondônia",
+    "prizeDescription": "O primeiro participante a acertar todas as perguntas ganha um prêmio!",
+    "updatedAt": "2026-01-01T00:00:00.000Z"
+  }
+}
